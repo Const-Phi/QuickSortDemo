@@ -20,7 +20,6 @@ namespace QuickSortDemo
         private static void Print(Double[] array, String message = null) =>
             Console.WriteLine($"\t{message}{Environment.NewLine}{String.Join(Environment.NewLine, array)}{Environment.NewLine}");
         
-
         private static void Swap(Double[] array, Int32 i, Int32 j)
         {
             var temp = array[i];
@@ -105,7 +104,6 @@ namespace QuickSortDemo
                 UnsafePrint(ptr, size, "before:");
                 UnsafeQuickSort(ptr, size);
                 UnsafePrint(ptr, size, "after:");
-                level--;
             }
 #else
             var array = Generate(size, min, max);
